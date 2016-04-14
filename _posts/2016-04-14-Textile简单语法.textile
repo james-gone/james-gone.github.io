@@ -1,0 +1,40 @@
+http://www.lfhacks.com/index.php?id=33
+
+http://www.einfach-persoenlich.de/mt-doc/mtmanual_textile2.html
+
+http://redmine.ossxp.com/redmine/documents/8
+
+http://redcloth.org/hobix.com/textile/
+
+"redmine中文wiki格式说明":http://www.redmine.org/projects/redmine/wiki/SimplifiedChineseWikiFormatting
+
+h2. 链接
+
+|功能|说明|举例|
+|链接到issue|用@ # @后跟issue号 | @ #2 @ #2|
+|链接到其它项目的wiki| 用@[[项目:页面]]@ 显示一个指向其它项目名称为“页面"的wiki页面的链接。|@[[james个人知识积累:个人知识积累]]@  [[james个人知识积累:个人知识积累]]|
+|链接到外部网页|用@"显示的文字":网络地址@ | <code>"james个人知识积累":http://112.74.112.215/projects/james/wiki/个人知识积累</code> "james个人知识积累":http://112.74.112.215/projects/james/wiki/个人知识积累 |
+|重命名不同显示链接到同一目标|用@[[@目标地址@|@显示文字@]]@ | @[[@ 软件开发过程 @|@ Rails和产品规划 @]]@ ,[[软件开发过程|Rails和产品规划]]|
+
+h2. 图片
+
+|功能|说明|举例|
+|显示附属的图片|用 @! !@包含完整的文件名，注意文件名不要有特殊字符和空格|@!stars.jpg!@|
+
+h2. 颜色
+
+
+@* %{color:red}红色% %{color:green}绿色% %{color:yellow}黄色% %{color:#82B6E1}蓝色%@
+@* %{color:red}红色% %{color:green}绿色% %{color:yellow}黄色% %{color:#82B6E1}蓝色%@
+@* %{background:lightgreen}淡绿背景% %{background:yellow}黄色背景%@
+@* %{background:lightgreen}淡绿背景% {background:yellow}黄色背景%@
+
+
+* %{color:red}红色% %{color:green}绿色% %{color:yellow}黄色% %{color:#82B6E1}蓝色%
+* %{color:red}红色%<notextile></notextile>%{color:green}绿色%<notextile></notextile>%{color:yellow}黄色%<notextile></notextile>%{color:#82B6E1}蓝色%
+* %{background:lightgreen}淡绿背景% %{background:yellow}黄色背景%
+* %{background:lightgreen}淡绿背景%<notextile></notextile>%{background:yellow}黄色背景%
+
+h2. 引用
+
+@{{include(page)}}@ 引用只能是整个page。
