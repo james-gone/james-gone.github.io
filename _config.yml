@@ -24,4 +24,4 @@ timezone: Asia/Hong_Kong
 
 gems:
         - jekyll-textile-converter
-textile_ext: "textile, txtl, tl"
+textile_ext: "textile,txtl,tl"
